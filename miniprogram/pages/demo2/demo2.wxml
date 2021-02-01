@@ -1,0 +1,1 @@
+<button bindtap="btnClick">获取排序</button>

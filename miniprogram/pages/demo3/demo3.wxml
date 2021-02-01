@@ -1,0 +1,9 @@
+<button bindtap="getData">获取数据</button>
+<view wx:for="{{dataList}}" wx:key="index">
+  <view>{{index+1}}.title:{{item.title}}</view>
+  <view>num:{{item.num}}</view>
+  <view>author:{{item.author}}</view>
+  -----------------------
+</view>
+--------------------------------------
+<button type="primary" bindtap="upDate">更新数据</button>

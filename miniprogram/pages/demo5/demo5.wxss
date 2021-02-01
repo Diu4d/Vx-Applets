@@ -1,0 +1,7 @@
+.row{
+  padding: 100rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.row .title{
+  font-size: 50rpx;
+}

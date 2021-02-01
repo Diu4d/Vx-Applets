@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/demo5/demo5",
+    "pages/demo4/demo4",
+    "pages/demo3/demo3",
+    "pages/index/index",
+    "pages/demo1/demo1",
+    "pages/demo2/demo2"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发基础",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

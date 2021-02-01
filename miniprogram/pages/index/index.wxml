@@ -1,0 +1,14 @@
+<button type="primary" bindtap="getData">获取数据</button>
+<view wx:key="*this" wx:for="{{dataObj}}">{{item.title}}---{{item.author}}</view>
+
+-------------------
+<button type="primary" bindtap="addData">插入数据</button>
+
+<form bindsubmit="submitValue">
+  <input placeholder="请输入账号" type="text" name="title"></input>
+  <input placeholder="请输入密码" type="text" name="author"></input>
+  <textarea name="content" id="" cols="30" rows="10"></textarea>
+  <button form-type="submit" type="primary">提交</button>
+  <button form-type="reset">重置</button>
+</form>
+
