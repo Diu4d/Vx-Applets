@@ -1,4 +1,4 @@
-<view class="row" wx:for="{{datalist}}">
-  <view class="title">标题:{{item.title}}</view>
+<view class="row" wx:for="{{dataList}}">
+  <view class="title">{{index+1}}.标题:{{item.title}}</view>
   <view>阅读量:{{item.num}}</view>
 </view>
