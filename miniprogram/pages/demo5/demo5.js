@@ -10,7 +10,7 @@ Page({
   },
   getData(num=5,page=0){
     wx.cloud.callFunction({
-      name:"demolist",
+      name:"demoGetList",
       data:{
         num:num,
         page:page
@@ -23,6 +23,33 @@ Page({
       this.setData({
         dataList:newData
       })
+    })
+  },
+
+
+
+  // 点击将阅读数增加7
+  clickRow(res){
+    // 1.获取点击的id和索引值
+    // 2.云函数进行更新操作
+    // 3.前端连后端，将数据传输给后端，后端再返回数据
+    // 4.重新渲染列表数据
+    wx.showLoading({
+      title: '数据加载中....',
+    })
+    var {id,idx} = res.currentTarget.dataset
+    wx.cloud.callFunction({
+      name:"demoUpList",
+      data:{
+        id:id
+      }
+    }).then(res=>{
+      var newData = this.data.dataList
+      newData[idx].num+=7
+      this.setData({
+        dataList:newData
+      })
+      wx.hideLoading()
     })
   },
 
