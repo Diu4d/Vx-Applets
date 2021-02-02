@@ -38,6 +38,7 @@ Page({
       title: '数据加载中....',
     })
     var {id,idx} = res.currentTarget.dataset
+    console.log(res);
     wx.cloud.callFunction({
       name:"demoUpList",
       data:{

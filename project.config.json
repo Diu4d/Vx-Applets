@@ -86,6 +86,12 @@
         {
           "name": "pages/demo5/demo5",
           "pathName": "pages/demo5/demo5",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/demo6/demo6",
+          "pathName": "pages/demo6/demo6",
           "scene": null
         }
       ]
